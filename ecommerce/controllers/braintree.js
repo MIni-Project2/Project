@@ -2,7 +2,6 @@ const User = require("../models/user");
 const braintree = require("braintree");
 require("dotenv").config();
 
-/new feature added for braintree code:
 const gateway =  new braintree.BraintreeGateway({
     environment: braintree.Environment.Sandbox,
     merchantId: process.env.BRAINTREE_MERCHANT_ID,
